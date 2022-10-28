@@ -3,17 +3,23 @@ const price = 0.21;
 
 // ------------ logica
 
+// nodo html per il nome
+const userName = document.querySelector("[name='full_name']");
+userName.addEventListener("click", function(){
+    alert("Non lasciare il campo vuoto!")
+})
+
 // chiedo i km ed età + li valido + li salvo in una variabile
-let userKm = parseInt(prompt("Quanti km devi fare?"));
+// let userKm = parseInt(prompt("Quanti km devi fare?"));
 
 while (isNaN(userKm)){
-    userKm = parseInt(prompt("Inserisci un numero valido"));
+    // userKm = parseInt(prompt("Inserisci un numero valido"));
 }
 
-let userAge = parseInt(prompt("Quanti anni hai?"));
+// let userAge = parseInt(prompt("Quanti anni hai?"));
 
 while (isNaN(userAge)){
-    userAge = parseInt(prompt("Inserisci un numero valido"));
+    // userAge = parseInt(prompt("Inserisci un numero valido"));
 }
 
 // calolo il prezzo base del biglietto
@@ -34,6 +40,3 @@ if (disCount){
 }
 
 console.log(priceFinal)
-
-
-// ----------- nodi html
